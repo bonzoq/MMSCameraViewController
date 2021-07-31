@@ -20,6 +20,7 @@ class CameraView: UIView {
     @IBOutlet weak var topBarView: UIView!
     @IBOutlet weak var bottomBarView: UIView!
 
+    //fix
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
