@@ -354,18 +354,11 @@ open class MMSCameraViewController: UIViewController {
             return
         }
 
-        // if the camera has a flash make it visible and enable it otherwise make it hidden.
-        if cameraDevice.hasFlash {
-            cameraView.flashBtn.isHidden = false
-            cameraView.flashBtn.isEnabled = true
-        } else {
-
-            cameraView.flashBtn.isHidden = true
-        }
+        cameraView.flashBtn.isHidden = true
 
         // The snap and swap camera buttons are always enabled
         cameraView.snapBtn.isEnabled = true
-        cameraView.cameraBtn.isEnabled = true
+        cameraView.cameraBtn.isHidden = true
 
     }
 
@@ -861,15 +854,15 @@ open class MMSCameraViewController: UIViewController {
 
 // Helper function inserted by Swift 4.2 migrator.
 private func convertFromAVCaptureSessionPreset(_ input: AVCaptureSession.Preset) -> String {
-	return input.rawValue
+    return input.rawValue
 }
 
 // Helper function inserted by Swift 4.2 migrator.
 private func convertFromAVMediaType(_ input: AVMediaType) -> String {
-	return input.rawValue
+    return input.rawValue
 }
 
 // Helper function inserted by Swift 4.2 migrator.
 private func convertFromAVLayerVideoGravity(_ input: AVLayerVideoGravity) -> String {
-	return input.rawValue
+    return input.rawValue
 }
