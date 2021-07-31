@@ -22,12 +22,10 @@ class CameraView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        flashBtn.isHidden = true
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        flashBtn.isHidden = true
     }
 
     func disableSnapButton() {
